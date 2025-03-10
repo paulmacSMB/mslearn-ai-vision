@@ -15,7 +15,6 @@ def main():
         load_dotenv()
         training_endpoint = os.getenv('TrainingEndpoint')
         training_key = os.getenv('TrainingKey')
-        project_id = os.getenv('ProjectID')
 
         # Authenticate a client for the training API
         credentials = ApiKeyCredentials(in_headers={"Training-key": training_key})
